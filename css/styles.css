@@ -214,7 +214,7 @@ img{
 }
 
 .visually-hidden{
-    display: none;
+    visibility: hidden;
 }
 
 .sec2-list{
