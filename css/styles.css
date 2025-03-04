@@ -214,7 +214,16 @@ img{
 }
 
 .visually-hidden{
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .sec2-list{
@@ -256,12 +265,16 @@ img{
 
 .sec3-list{
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
     gap: 24px;
-    border-radius: 0px 0px 4px 4px;
 }
 
 .team-card{
+    background-color: #FFFFFF;
+    text-align: center;
     width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-hero{
@@ -296,12 +309,13 @@ img{
 .sec4-list{
     display: flex;
     flex-wrap: wrap;
-    column-gap: 24px;
+    gap: 24px;
     row-gap: 48px;
 }
 
 .sec4-list-item{
-    width: calc((100% - 72px) / 4);
+    background-color: #ffffff;
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .sec4-list-app{
